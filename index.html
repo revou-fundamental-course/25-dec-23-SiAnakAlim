@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- JUDUL -->
+    <div class="judul">
+      <h1>Welcome to Katik</h1>
+      <p class="sub">Hai Sobat, Selamat Datang di Katik :]</p>
+      <p class="sub">
+        Sebuah web app sederhana yang berfungsi untuk menghitung nilai luas dan
+        keliling bangun datar
+      </p>
+    </div>
+    <!-- END JUDUL -->
+
+    <!-- MENU -->
+    <div class="menu">
+      <div class="kotak" id="segitiga">
+        <h2>Segitiga</h2>
+      </div>
+      <div class="kotak" id="jajargenjang">
+        <h2>Jajar Genjang</h2>
+      </div>
+    </div>
+    <!-- END MENU -->
+
+    <!-- MENU SEGITIGA CONTAINER -->
+    <div class="menuSegitigaContainer">
+      <!-- Judul "Menu Segitiga" -->
+      <h2 class="judulMenuSegitiga">Menu Segitiga</h2>
+
+      <!-- MENU SEGITIGA -->
+      <div class="menuSegitiga">
+        <!-- Menu "Keliling Segitiga" -->
+        <div class="submenu" id="kelilingSegitiga">
+          <h3>Keliling Segitiga</h3>
+          <div class="rumuskeliling">
+            <img src="keliling-segitiga.jpg" alt="Rumus Keliling Segitiga" />
+          </div>
+          <form id="kelilingSegitigaForm">
+            <label for="sisi1">Sisi 1:</label>
+            <input type="number" id="sisi1" name="sisi1" required />
+
+            <label for="sisi2">Sisi 2:</label>
+            <input type="number" id="sisi2" name="sisi2" required />
+
+            <label for="sisi3">Sisi 3:</label>
+            <input type="number" id="sisi3" name="sisi3" required />
+
+            <button type="submit" class="hitungBtn">Hitung</button>
+            <button type="reset" class="resetBtn">Reset</button>
+          </form>
+
+          <!-- HASIL -->
+          <div class="hasil-container" id="hasilKeliling">
+            <h3>Jawaban</h3>
+            <div id="hasilKelilingText" class="rumusText"></div>
+          </div>
+          <!-- END HASIL -->
+        </div>
+
+        <!-- Menu "Luas Segitiga" -->
+        <div class="submenu" id="luasSegitiga">
+          <h3>Luas Segitiga</h3>
+          <div class="rumusluas">
+            <img src="luas-segitiga.png" alt="Rumus Luas Segitiga" />
+          </div>
+          <form id="luasSegitigaForm">
+            <label for="alas">Alas:</label>
+            <input type="number" id="alas" name="alas" required />
+
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" name="tinggi" required />
+
+            <button type="submit" class="hitungBtn">Hitung</button>
+            <button type="reset" class="resetBtn">Reset</button>
+          </form>
+
+          <!-- HASIL -->
+          <div class="hasil-container" id="hasilLuas">
+            <h3>Jawaban</h3>
+            <div id="hasilLuasText" class="rumusText"></div>
+          </div>
+          <!-- END HASIL -->
+        </div>
+      </div>
+    </div>
+    <!-- END MENU SEGITIGA CONTAINER -->
+
+    <!-- MENU JAJARGENJANG CONTAINER -->
+    <div class="menuSegitigaContainer">
+      <!-- Judul "Menu Jajargenjang" -->
+      <h2 class="judulMenuSegitiga" id="judulMenuJajarGenjang">
+        Menu Jajargenjang
+      </h2>
+
+      <!-- MENU JAJAR GENJANG -->
+      <div class="menuSegitiga">
+        <!-- Menu "Keliling JAJAR GENJANG" -->
+        <div class="submenu" id="kelilingJajarGenjang">
+          <h3>Keliling Jajargenjang</h3>
+          <div class="rumuskeliling">
+            <img
+              src="keliling-jajargenjang.png"
+              alt="Rumus Keliling Jajargenjang"
+            />
+          </div>
+          <form id="kelilingJajarGenjangForm">
+            <label for="sisi1JG">Sisi 1:</label>
+            <input type="number" id="sisi1JG" name="sisi1JG" required />
+
+            <label for="sisi2JG">Sisi 2:</label>
+            <input type="number" id="sisi2JG" name="sisi2JG" required />
+
+            <label for="sisi3JG">Sisi 3:</label>
+            <input type="number" id="sisi3JG" name="sisi3JG" required />
+
+            <label for="sisi4JG">Sisi 4:</label>
+            <input type="number" id="sisi4JG" name="sisi4JG" required />
+
+            <button type="submit" class="hitungBtn">Hitung</button>
+            <button type="reset" class="resetBtn">Reset</button>
+          </form>
+
+          <!-- HASIL -->
+          <div class="hasil-container" id="hasilKelilingJajarGenjang">
+            <h3>Jawaban</h3>
+            <div id="hasilKelilingJajarGenjangText" class="rumusText"></div>
+          </div>
+          <!-- END HASIL -->
+        </div>
+
+        <!-- Menu "Luas JAJAR GENJANG" -->
+        <div class="submenu" id="luasJajarGenjang">
+          <h3>Luas Jajargenjang</h3>
+          <div class="rumusluas">
+            <img src="luas-jajargenjang.jpg" alt="Rumus Luas Jajargenjang" />
+          </div>
+          <form id="luasJajarGenjangForm">
+            <label for="alasJG">Alas:</label>
+            <input type="number" id="alasJG" name="alasJG" required />
+
+            <label for="tinggiJG">Tinggi:</label>
+            <input type="number" id="tinggiJG" name="tinggiJG" required />
+
+            <button type="submit" class="hitungBtn">Hitung</button>
+            <button type="reset" class="resetBtn">Reset</button>
+          </form>
+
+          <!-- HASIL -->
+          <div class="hasil-container" id="hasilLuasJajarGenjang">
+            <h3>Jawaban</h3>
+            <div id="hasilLuasJajarGenjangText" class="rumusText"></div>
+          </div>
+          <!-- END HASIL -->
+        </div>
+      </div>
+    </div>
+    <!-- END MENU JAJARGENJANG CONTAINER -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Katik. All rights reserved.</p>
+        <p>Designed by Aryamukti Satria</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
